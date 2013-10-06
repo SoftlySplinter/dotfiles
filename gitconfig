@@ -4,3 +4,5 @@
 [core]
 	excludesfile = /home/softly/.gitignore_global
 	editor = vim
+[push]
+	default = current
