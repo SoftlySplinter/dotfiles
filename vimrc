@@ -16,6 +16,9 @@ au FileType python map <F5> :exec "python %"<CR>
 au FileType tex map <F5> :exec "!pdflatex %:r"<CR>
 " PF6 - Compile with extra options (e.g. pdflatex with bibtex)
 au FileType tex map <F6> :exec "!pdflatex %:r && bibtex %:r && pdflatex %:r && pdflatex %:r"<CR>
+" PF9 - View files
+au FileType tex map <F9> :exec "!evince %:r.pdf &"<CR>
+au FileType html map <F9> :exec "chromium-browser %"<CR>
 " PF11 - Paste toggle
 set pastetoggle=<F11>
 
@@ -23,6 +26,7 @@ set pastetoggle=<F11>
 syntax on
 :autocmd BufNewFile,BufRead *.arff set ft=arff
 :autocmd BufNewFile,BufRead *.md set ft=markdown
+:autocmd BufNewFile,BufRead *.mustache set ft=mustache
 :autocmd BufNewFile,BufRead *.scala set ft=scala
 :autocmd BufNewFile,BufRead *.slim set ft=slim
 " Hilight long lines (>80)
