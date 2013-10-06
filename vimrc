@@ -12,6 +12,7 @@ au FileType tex map <F6> :exec "!pdflatex %:r && bibtex %:r && pdflatex %:r && p
 nnoremap <F2> :set nu!<CR>
 
 "" Filetypes and highlighting
+syntax on
 :autocmd BufNewFile,BufRead *.md set ft=markdown
 :autocmd BufNewFile,BufRead *.arff set ft=arff
 :autocmd BufNewFile,BufRead *.slim set ft=slim
