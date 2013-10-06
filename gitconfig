@@ -1,0 +1,6 @@
+[user]
+	name = Alex Brown
+	email = alex@alexanderdbrown.com
+[core]
+	excludesfile = /home/softly/.gitignore_global
+	editor = vim
