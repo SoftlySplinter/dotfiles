@@ -1,6 +1,7 @@
 " General options
 set laststatus=2
 set encoding=utf8
+set textwidth=80
 
 " Spelling
 au FileType markdown setlocal spell spelllang=en_gb
@@ -11,7 +12,7 @@ au FileType tex setlocal spell spelllang=en_gb
 " PF2 - Line Numbers
 nnoremap <F2> :set nu!<CR>
 " PF5 - Compile
-au FileType markdown map <F5> :exec "!pandoc --smart --standalone --table-of-content --mathml --from=markdown --to=html % --output=%.html"<CR>
+au FileType markdown map <F5> :exec "!pandoc --smart --standalone  --table-of-content --mathml --from=markdown --to=html % --output=%.html"<CR>
 au FileType python map <F5> :exec "python %"<CR>
 au FileType tex map <F5> :exec "!pdflatex %:r"<CR>
 " PF6 - Compile with extra options (e.g. pdflatex with bibtex)
