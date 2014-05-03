@@ -32,12 +32,12 @@ ZSH_THEME="softly2"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow ssh-agent pip github rake tmux rsync taskwarrior)
+plugins=(github git git-flow ssh-agent pip rake tmux rsync taskwarrior svn)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-PATH=$PATH:$HOME/.rvm/bin:$HOME/bin:$HOME/.sbt/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin:$HOME/bin:$HOME/.sbt/bin:$HOME/pear/bin # Add RVM to PATH for scripting
 
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc

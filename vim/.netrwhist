@@ -1,3 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/softly/git/sem6120-assign1/presentation/template'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/opt/graphite/conf'
+let g:netrw_dirhist_2='/home/softly/git/chronicler/chronicler/callback'
+let g:netrw_dirhist_3='/home/softly/svn/csgp/20/branches/RoSe-FR4-1/doc/feature-design/Rose-FR4-1'
+let g:netrw_dirhist_4='/home/softly/svn/csgp/20/branches/CT-FR1-3/doc/feature-design/CT-FR1-4'
