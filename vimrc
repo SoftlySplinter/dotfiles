@@ -47,7 +47,10 @@ syntax enable
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%80v.\+/
 
-" vigation like firefox
+"save a file as root. Use :w!! and vim will ask you for your password
+ca w!! w !sudo tee >/dev/null "%"
+
+" Navigation like firefox
 nnoremap <C-PageDown> :tabprevious<CR>
 nnoremap <C-PageUp>   :tabnext<CR>
 nnoremap <C-t>        :tabnew<CR>
